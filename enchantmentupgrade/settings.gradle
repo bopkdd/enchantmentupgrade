@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        maven { url = "file:///D:/mcworker/local-repo" }
+        maven { url = "https://maven.fabricmc.net/" }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'enchantmentupgrade'

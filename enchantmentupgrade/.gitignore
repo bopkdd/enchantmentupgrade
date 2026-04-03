@@ -1,0 +1,46 @@
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Local repos
+local-repo/
+
+# Minecraft
+minecraft*/
+
+# Gradle wrapper (if not committed)
+# gradle-wrapper.jar
+
+# Environment variables
+.env
+.env.local
+
+# IDEA
+.idea/
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/

@@ -1,0 +1,67 @@
+﻿Downloading https://services.gradle.org/distributions/gradle-9.4.1-bin.zip
+
+.\gradlew.bat : Exception in thread "main" java.io.IOException: 
+Downloading from https://services.gradle.org/distributions/gradl
+e-9.4.1-bin.zip failed: timeout
+所在位置 行:1 字符: 5
++ & { .\gradlew.bat --no-daemon build --stacktrace 2>&1 | Out-Fi
+le -Fil ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Exception in th... 
+   failed: timeout:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:1
+10)
+	at org.gradle.wrapper.Download.download(Download.java:67)
+	at org.gradle.wrapper.Install$1.call(Install.java:68)
+	at org.gradle.wrapper.Install$1.call(Install.java:48)
+	at org.gradle.wrapper.ExclusiveFileAccessManager.access(Exclusi
+veFileAccessManager.java:69)
+	at org.gradle.wrapper.Install.createDist(Install.java:48)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.j
+ava:107)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.
+java:63)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.j
+ava:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.ja
+va:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:3
+46)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java
+:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java
+:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSock
+etInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(S
+SLSocketInputRecord.java:483)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompl
+etePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationReco
+rd(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read
+(SSLSocketImpl.java:1066)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStre
+am.java:291)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStr
+eam.java:347)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInput
+Stream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStre
+am.java:399)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpCl
+ient.java:827)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.j
+ava:759)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInp
+utStream0(HttpURLConnection.java:1706)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInp
+utStream(HttpURLConnection.java:1615)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.
+getInputStream(HttpsURLConnectionImpl.java:223)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:8
+7)
+	... 7 more

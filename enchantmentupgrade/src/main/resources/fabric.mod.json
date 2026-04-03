@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "enchantmentupgrade",
+  "version": "${version}",
+  "name": "Enchantment Upgrade",
+  "description": "Automatically upgrades enchantments on tools and armor as they wear out",
+  "authors": [
+    "bopkdd"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/"
+  },
+  "license": "MIT",
+  "icon": "assets/enchantmentupgrade/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "enchantmentupgrade.EnchantmentUpgrade"
+    ]
+  },
+  "mixins": [
+    "enchantmentupgrade.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": ">=0.105.0"
+  }
+}
