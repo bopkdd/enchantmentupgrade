@@ -11,6 +11,7 @@ build/
 # Logs
 logs/
 *.log
+build_log*
 
 # Temporary files
 *.tmp
